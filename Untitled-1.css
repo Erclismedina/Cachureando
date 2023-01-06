@@ -1,0 +1,493 @@
+: raíz {
+    --color de fondo :  # 16FFBD ;
+    --color primario :  # 000 ;
+    --highlight-color :  # FF8DAC ;
+}
+
+* {
+    tamaño de fuente :  16 px ;
+}
+
+html {
+    comportamiento de desplazamiento : suave;
+}
+
+cuerpo {
+    color de fondo :  var ( --color de fondo );
+    familia de fuentes :  'Work Sans' , Arial , Helvetica , sans-serif;
+    altura de línea :  2 ;
+    relleno :  0 ;
+    margen :  0 ;
+}
+
+: -moz-selección {
+    color de fondo :  var ( --highlight-color );
+}
+:: selección {
+    color de fondo :  var ( --highlight-color );
+}
+
+un {
+  color :  var ( --primary-color );
+  decoración de texto : ninguno;
+  relleno :  10 px ;
+  transición : color 0,2 s facilidad de entrada y salida
+}
+
+a : flotar {
+    color :  var ( --highlight-color );
+}
+
+h2 ,  h3 {
+    familia de fuentes :  'Barlow Condensed' , Arial , Helvetica , sans-serif;
+}
+
+h2 {
+    tamaño de fuente :  2,5 rem ;
+    alineación de texto : centro;
+}
+
+h3 {
+    tamaño de fuente :  1,5 rem ;
+    alineación de texto : centro;
+}
+
+. contenedor {
+    ancho :  1920 píxeles ;
+}
+
+/*
+              MENÚ
+**/
+
+. menú {
+    alineación de texto : centro;
+    pantalla : flexible;
+    justificar-contenido : espacio-entre;
+    margen :  100 px automático 0 automático;
+    ancho :  50 % ;
+    alinear elementos : centro;
+}
+
+. menú  >  división {
+    ancho :  33 % ;
+}
+
+. menú  ul {
+    estilo de lista : ninguno;
+    relleno :  0 ;
+    margen :  0 ;
+    pantalla : flexible;
+    justificar-contenido : centro;
+    espacio :  30 px ;
+}
+
+. menú  ul  li {
+    nombre-animación : logo-apertura;
+    duración de la animación :  1,4 s ;
+    función de temporización de animación : entrada y salida fácil;
+}
+
+. menú  un {
+    familia de fuentes :  'barlow Condensed' ;
+    tamaño de fuente :  1,7 rem ;
+
+    
+}
+
+. menú _ imagen del logotipo  {
+    nombre-animación : logo-apertura;
+    duración de la animación :  1,6 s ;
+    función de temporización de animación : entrada y salida fácil;
+}
+
+. menú-móvil {
+    pantalla : ninguno;
+}
+
+. menu-mobile  a : hover  svg {
+    relleno :  var ( -color-resaltado );
+}
+
+. menú-móvil . encabezado {
+    pantalla : flexible;
+    ancho :  100 % ;
+    dirección de flexión : fila;
+    alinear elementos : centro;
+    justificar-contenido : espacio uniformemente;
+    alinear-contenido : centro;
+}
+
+. menú-móvil . encabezado _ logotipo {
+    crecimiento flexible :  2 ;
+    alineación de texto : centro;
+}
+
+. menú-móvil . encabezado _ imagen del logotipo  {
+    ancho :  64 píxeles ;
+
+    nombre-animación : logo-apertura;
+    duración de la animación :  1,6 s ;
+    función de temporización de animación : entrada y salida fácil;
+}
+
+. menú-móvil  ul {
+    margen :  0 ;
+    relleno :  0 ;
+    pantalla : flexible;
+    dirección de flexión : columna;
+}
+
+. menú-móvil  ul  li {
+    alineación de texto : centro;
+}
+
+. menú-móvil  ul  li  a {
+    pantalla : bloque;
+    relleno :  10 px  0 ;
+}
+
+. menú-móvil-cerrado {
+    pantalla : ninguno;
+}
+/*
+              VÍDEO PRINCIPAL
+**/
+
+. video principal {
+    margen superior :  250 px ;
+    transformar-origen :  0  0 ;
+    transformar :  skewY ( -10 grados );
+    desbordamiento : oculto;
+    altura :  500 píxeles ;
+    margen inferior :  150 px ;
+}
+
+. vídeo principal . vídeo {
+    desbordamiento : oculto;
+    transformar :  escala skewY ( 10 grados ) ( 1.4 , 1.4 ); 
+}
+
+. vídeo principal . vídeo  vídeo {
+    margen superior :  -100 px ;
+    ancho :  100 % ;
+}
+
+/*
+              INTRODUCCIÓN
+**/
+
+. introducción {
+    alineación de texto : centro;
+    ancho :  320 píxeles ;
+    margen :  0 automático;
+    margen superior :  -100 px ;
+    relleno inferior :  100 px ;
+}
+
+/*
+              TRABAJAR
+**/
+
+. trabajo {
+    relleno superior :  150 px ;
+    transformar-origen :  0  0 ;
+    transformar :  skewY ( -10 grados );
+}
+
+. cuadrícula {
+    pantalla : cuadrícula;
+    grid-template-columns :  1 fr  1 fr  1 fr ;
+    brecha :  0 ;
+}
+
+. rejilla _ elemento {
+    relleno :  0 ;
+    posición : relativa;
+    desbordamiento : oculto;
+    altura :  300 píxeles ;
+    
+}
+
+. rejilla _ imagen del artículo  {
+    ancho :  101 % ;
+    margen superior :  -60 px ;
+    transformar :  escala skewY ( 10 grados ) ( 1.2 , 1.2 );
+    transición : todo 0,075 s ;
+}
+
+. rejilla _ elemento : img  flotante {
+    transformar :  escala skewY ( 10 grados ) ( 1.4 , 1.4 );
+}
+
+. rejilla _ artículo _ bg-hover {
+    color de fondo :  rgba ( 0 , 0 , 0 , 0,7 );
+    ancho :  100 % ;
+    altura :  150 % ;
+    pantalla : cuadrícula;
+    posición : absoluta;
+    índice z :  2 ;
+    arriba :  -25 % ;
+    opacidad :  0 ;
+    transición : opacidad 0,3 s facilidad de entrada y salida;
+    transformar :  skewY ( 10 grados ) escala ( 1 , 1 );
+    justificar-elementos : centro;
+    alinear elementos : centro;
+    alineación de texto : centro;
+}
+
+. rejilla _ elemento : flotar . bg-hover {
+    desbordamiento : oculto;
+    opacidad :  1 ;
+}
+
+. rejilla _ elemento : flotar . bg-hover . información {
+    nombre de la animación : rebote;
+    duración de la animación :  0,4 s ;
+    función de temporización de animación : entrada y salida fácil;
+}
+
+. rejilla _ artículo _ bg-hover . título {
+    color : blanco;
+}
+. rejilla _ artículo _ bg-hover . cliente {
+    color :  var ( --background-color );
+}
+
+. acerca de {
+    ancho :  50 % ;
+    alineación de texto : centro;
+    margen :  0 automático;
+    relleno inferior :  150 px ;
+}
+
+. columnas {
+    pantalla : flexible;
+    justificar-contenido : espacio-entre;
+    espacio :  20 px ;
+}
+
+. contacto {
+    color de fondo :  # 000 ;
+    relleno superior :  150 px ;
+    color : blanco;
+    transformar :  skewY ( -10 grados );
+}
+
+. contacto _ contacto-contenedor {
+    transformar :  skewY ( 10 grados );
+    color :  var ( --background-color );
+    ancho :  1280 píxeles ;
+    margen :  0 automático;
+}
+
+. contacto _ contacto-contenedor  h3 {
+    color : blanco;
+}
+
+. contacto _ contacto-contenedor . correos electrónicos {
+    alineación de texto : derecha;
+}
+
+. contacto _ contacto-contenedor . correos electrónicos  h3 {
+    alineación de texto : derecha;
+}
+
+. contacto _ contacto-contenedor . ubicación  h3 {
+    alineación de texto : izquierda;
+}
+
+. contacto _ contacto-contenedor . sociales {
+    alineación de texto : centro;
+}
+
+. contacto _ contacto-contenedor . social  a : ruta de desplazamiento  {
+    relleno :  var ( -color-resaltado );
+}
+
+pie de página {
+    color de fondo :  # 000 ;
+    altura :  450 píxeles ;
+    margen superior :  -170 px ;
+}
+
+# pantalla {
+    color de fondo : var ( --highlight-color );
+    posición : fijo;
+    índice z :  100 ;
+    arriba :  -280 px ;
+    izquierda :  0 ;
+    ancho :  100 vw ;
+    altura :  10vh ; _
+    transformar :  skewY ( -10 grados );
+    transición : todo 0,45 s ;
+    animación-tiempo-función : lineal;
+    animación-duración :  2 s ;
+}
+
+# detalles-contenedor {
+    color de fondo :  var ( --color de fondo );
+    posición : fijo;
+    superior : 0 ;
+    izquierda :  0 ;
+    ancho :  100 % ;
+    altura :  100 % ;
+    índice z :  10 ;
+    desbordamiento : automático;
+    pantalla : ninguno;
+}
+
+# detalles-contenedor . barra de navegación {
+    pantalla : flexible;
+    justificar-contenido : espacio-entre;
+    relleno :  20 px ;
+}
+
+. ocultar elemento {
+    pantalla : ninguno;
+}
+
+# detalles-contenedor . artículos {
+    ancho :  60 % ;
+    margen :  0 automático;
+}
+
+# detalles-contenedor . artículos _ artículo _ imagen principal  img {
+    ancho :  100 % ;
+}
+
+# detalles-contenedor . artículos _ artículo _ título {
+    alineación de texto : centro;
+}
+
+
+
+
+@keyframes logotipo de apertura{
+    0 % {
+        transformar :  escala ( 0 );
+    }
+
+    100 % {
+        transformar :  escala ( 1 );
+    }
+}
+
+Rebote de @fotogramas clave {
+    0 % { transformar :  traducir Y ( 500 px );}
+    80 % { transformar :  traducir Y ( -30 px );}
+    100 % { transformar :  traducirY ( 0 );}
+}
+
+Desvanecimiento de @fotogramas clave {
+    0 % { altura :  0 vh ;}
+    50 % { altura :  150 vh ;}
+    100 % { altura :  0 vh ;}
+}
+
+
+
+@media ( ancho máximo :  1450 px ){
+    . vídeo principal {;
+        altura : 600px;
+    }
+
+    . rejilla _ elemento {
+        relleno :  0 ;
+        posición : relativa;
+        desbordamiento : oculto;
+        altura :  250 píxeles ;
+    }
+}
+
+@media ( ancho máximo :  1280 px ){
+    . vídeo principal {;
+        altura : 400px;
+    }
+
+    . cuadrícula {
+        grid-template-columns :  1 fr  1 fr  1 fr ;
+    }
+
+    . rejilla _ elemento {
+        altura :  150 píxeles ;
+    }
+
+    . contacto _ contacto-contenedor {
+        ancho :  90 % ;
+        margen :  0 automático;
+        alineación de texto : centro;
+    }
+
+    . contacto _ contacto-contenedor  h3 {
+        alineación de texto : centro ! importante ;
+    }
+    . contacto _ contacto-contenedor . correos electrónicos {
+        alineación de texto : centro;
+    }
+}
+
+@media ( ancho máximo :  900 px ){
+    . rejilla _ elemento {
+        altura :  150 píxeles ;
+    }
+    . cuadrícula {
+        grid-template-columns :  1 fr  1 fr ;
+    }
+}
+
+@media ( ancho máximo :  800 px ){
+    . vídeo principal {;
+        altura : 200px;
+    }
+
+    . vídeo principal . vídeo  vídeo {
+        margen superior :  0 ;
+    }
+
+    . rejilla _ elemento {
+        altura :  150 píxeles ;
+    }
+
+
+    . cuadrícula {
+        grid-template-columns :  1 fr  1 fr ;
+    }
+
+    . columnas {
+        dirección de flexión : columna;
+        brecha :  0 ;
+    }
+
+    . columnas  div {
+        ancho :  100 % ;
+        alineación de texto : centro;
+    }
+}
+
+
+@media ( ancho máximo :  540 px ){
+    . menú {
+        pantalla : ninguno;
+    }
+    . menú-móvil {
+        pantalla : bloque;
+    }
+
+    . vídeo principal . vídeo  vídeo {
+        margen superior :  0 ;
+    }
+    
+
+    . video principal {
+        margen superior :  100 px ;
+        altura :  150 píxeles ;
+    }
+
+    . rejilla _ elemento {
+        altura :  200 píxeles ;
+    }
+    . cuadrícula {
+        cuadrícula-plantilla-columnas :  1 fr ;
+    }
+}
